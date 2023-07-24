@@ -52,6 +52,8 @@ function Clientes() {
     <div className='App'>
       <NavBarTailwind />
       <br />
+      <br />
+      <br />
       <div className="w-72 container grid grid-cols-3 gap-80">
           <div className="w-full md:w-72">
             <Input label="Buscar Cliente por ID" 

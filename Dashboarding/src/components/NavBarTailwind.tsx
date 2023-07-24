@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
+
 import {
   Navbar,
   MobileNav,
   Typography,
   IconButton,
 } from "@material-tailwind/react";
+
+
  
 function NavBarTailwind() {
   const [openNav, setOpenNav] = useState(false);
@@ -57,9 +60,10 @@ function NavBarTailwind() {
       </Typography>
     </ul>
   );
- 
+  
   return (
-    <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 border-4 rounded-lg border-indigo-600">
+    <div className="flex justify-center">
+          <Navbar style={{ position: 'fixed', top: 2}} className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 border-4 rounded-lg border-indigo-600 navbar-fixed">
       <div className="container mx-auto flex items-center justify-between text-black">
         <Typography
           as="a"
@@ -113,6 +117,8 @@ function NavBarTailwind() {
         </div>
       </MobileNav>
     </Navbar>
+    </div>
+
   );
 }
 export default NavBarTailwind;

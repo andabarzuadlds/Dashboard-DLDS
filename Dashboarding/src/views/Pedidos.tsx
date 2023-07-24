@@ -34,6 +34,8 @@ function App() {
   return (
     <div className='App'>
       <NavBarTailwind />
+      <br />
+      <br />
       <OrdersList orders={orders}/>
       <br />
       <center>
